@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Customize the scrollbar */
+::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent; /* Color of the track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #4b4b4b; /* Color of the scroll thumb */
+    border-radius: 4px; /* Rounded corners of the scroll thumb */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #858585; /* Color of the scroll thumb on hover */
+  }
+  

@@ -1,0 +1,20 @@
+FROM node:16-alpine
+
+WORKDIR /frontend
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+ENV PINECONE_ENVIRONMENT=us-west1-gcp-free
+ENV PINECONE_API_KEY=b08ae245-9c8e-4f1e-9b9e-c75ec36df020
+ENV PINECONE_INDEX_NAME=space
+ENV OPENAI_API_KEY=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
+ENV NEXT_PUBLIC_USERNAME=alloweduser
+ENV NEXT_PUBLIC_PASSWORD=pass@alloweduser
+
+EXPOSE 3000
+
+CMD npm run dev
